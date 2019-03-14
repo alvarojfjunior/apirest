@@ -6,4 +6,4 @@ Spring
 JPA
 Postgres
 
-https://apirest-curso.herokuapp.com/swagger-ui.htm
+https://apirest-curso.herokuapp.com/swagger-ui.html
