@@ -1,9 +1,7 @@
 package com.wsmytraining.resources;
 
 import com.wsmytraining.models.Atividade;
-import com.wsmytraining.models.Treino;
 import com.wsmytraining.repository.AtividadeRepository;
-import com.wsmytraining.repository.TreinoRepository;
 import io.swagger.annotations.ApiOperation;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(value="/api/atividade")
+@RequestMapping(value="/api")
 public class AtividadeResource {
     
     @Autowired

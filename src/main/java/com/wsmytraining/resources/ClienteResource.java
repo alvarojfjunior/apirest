@@ -1,7 +1,6 @@
 package com.wsmytraining.resources;
 
 import com.wsmytraining.models.Cliente;
-import com.wsmytraining.models.Treino;
 import com.wsmytraining.repository.ClienteRepository;
 import io.swagger.annotations.ApiOperation;
 import java.util.List;
@@ -16,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(value="/api/cliente")
+@RequestMapping(value="/api")
 public class ClienteResource {
     
     @Autowired
