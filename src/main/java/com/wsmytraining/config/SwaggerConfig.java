@@ -1,4 +1,4 @@
-package com.produtos.apirest.config;
+package com.wsmytraining.config;
 
 import io.swagger.annotations.Api;
 import java.util.ArrayList;
@@ -17,7 +17,7 @@ import springfox.documentation.spring.web.plugins.Docket;
 
 @Configuration
 @EnableSwagger2
-@Api(value = "API REST Produtos")
+@Api(value = "API RESTful My Training")
 @CrossOrigin(origins = "")
 public class SwaggerConfig {
 
@@ -25,7 +25,7 @@ public class SwaggerConfig {
     public Docket productApi() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.produtos.apirest"))
+                .apis(RequestHandlerSelectors.basePackage("com.wsmytraining.wsmytraining"))
                 .paths(regex("/api.*"))
                 .build()
                 .apiInfo(metaInfo());
@@ -33,8 +33,8 @@ public class SwaggerConfig {
     
     private ApiInfo metaInfo() {
         ApiInfo apiInfo = new ApiInfo(
-                "Produtos API REST",
-                "API REST de controle de produtos.",
+                "My Training API RESTful",
+                "API RESTful para controle dos dados do app My Training.",
                 "1.0",
                 "Terms of Service",
                 new Contact("Álvaro Ferreira", "https://www.github.com/alvarojfjunior",
